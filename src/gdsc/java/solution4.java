@@ -9,14 +9,16 @@ public class solution4 {
         String W = "Weird";
         String NW = "Not Weird";
 
-        if ( N <= 5 && N >=2){
+        if (N % 2 == 1){
             System.out.println(W);
-        } else if(N <= 20 && N >= 6 ) {
+        } else if (N >= 2 && N<=5 ){
+            System.out.println(NW);
+
+        } else if (N >= 6 && N <= 20) {
             System.out.println(W);
-        }else if(N > 20){
+        } else {
             System.out.println(NW);
         }
-
         scanner.close();
     }
 }
